@@ -20,7 +20,7 @@ Objetivo do teste e corrigir pequenos erros do projeto.
 ## Correção da Controller
 O objetivo era corrigir o comportamento do controlador para que ele retornasse números aleatórios diferentes a cada chamada. 
 Para solucionar o problema, foi realizado uma instancia a classe Random com o seed no construtor, para que toda vez que a classe for invocada,
-e assim gerar um novo numero.
+e assim gerar um novo número.
 
 ## Erro na Paginação & Injeção de Dependência 
 Nesta segunda etápa Controller, foram feitas as algumas melhorias:
@@ -28,7 +28,7 @@ Nesta segunda etápa Controller, foram feitas as algumas melhorias:
 - Corrigido o bug de paginação, fazendo com que os resultados sejam retornados corretamente com base no parâmetro da page.
 - Foi Criada uma nova classe PaginacaoService que retorna os dados paginados dentro de sua propriedade, Entites e faz a lógica para as outras propriedades 'TotalCount' e 'HasNext'
 - Com a nova classe de paginação, as classes CustomerList e ProductList foram descartadas, porque não havia necessidada das mesmas.
-- Foi realizado a implementação da Injeção de Dependência, com isso realizando a substituição direta "CustomerService", e a "ProductService", 
+- Foi realizado a implementação da Injeção de Dependência, com isso realizando a substituição direta "CustomerService", e a "ProductService".
 
 ## Melhorias na Arquitetura 
  Para que seja respeito o principio Open-Closed, foi realizado uma pequena melhoria na arquitetura.
